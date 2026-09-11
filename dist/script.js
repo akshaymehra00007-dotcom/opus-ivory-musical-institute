@@ -39,6 +39,14 @@ const observer = new IntersectionObserver(entries => {
 }, {threshold:.12, rootMargin:'0px 0px -4%'});
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
+const mapPanel = document.querySelector('.visit__map');
+if (mapPanel) {
+  const mapObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => mapPanel.classList.toggle('in-view', entry.isIntersecting));
+  }, {threshold:.28});
+  mapObserver.observe(mapPanel);
+}
+
 const menuButton = document.querySelector('.menu-button');
 menuButton.addEventListener('click', () => {
   const open = header.classList.toggle('menu-open');
@@ -92,3 +100,14 @@ if (!reduceMotion && matchMedia('(hover:hover)').matches) {
   });
 }
 document.getElementById('year').textContent = new Date().getFullYear();
+
+const whatsappForm = document.getElementById('whatsappForm');
+whatsappForm?.addEventListener('submit', event => {
+  event.preventDefault();
+  const data = new FormData(whatsappForm);
+  const name = String(data.get('name') || '').trim();
+  const interest = String(data.get('interest') || 'Harmonium classes');
+  const message = String(data.get('message') || '').trim();
+  const text = `Hello Opus & Ivory, my name is ${name}. I am interested in ${interest}.${message ? ` ${message}` : ''}`;
+  window.open(`https://wa.me/916394166692?text=${encodeURIComponent(text)}`, '_blank', 'noopener');
+});
