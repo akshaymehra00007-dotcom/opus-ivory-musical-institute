@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090806">
+  <meta name="description" content="Opus & Ivory Musical Institute — a refined place to begin, deepen and express your musical journey in Gurugram.">
+  <title>Opus & Ivory Musical Institute | Gurugram</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__halo"></div>
+    <img src="assets/opus-ivory-logo.webp" alt="" class="loader__logo">
+    <div class="loader__staff"><i></i><i></i><i></i><i></i><i></i><span>♪</span></div>
+    <p>Preparing the room</p>
+  </div>
+
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <header class="site-header" id="header">
+    <a class="brand" href="#home" aria-label="Opus & Ivory home">
+      <img src="assets/opus-ivory-logo.webp" alt="Opus & Ivory Musical Institute">
+    </a>
+    <nav aria-label="Primary navigation">
+      <a href="#experience">Experience</a>
+      <a href="#programmes">Programmes</a>
+      <a href="#gallery">Studio</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <a class="header-cta magnetic" href="#visit">Begin your journey <span>↗</span></a>
+    <button class="menu-button" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero__media" aria-hidden="true">
+        <img src="assets/hero-grand-piano.webp" alt="" fetchpriority="high">
+        <div class="hero__veil"></div>
+      </div>
+      <svg class="hero__score" viewBox="0 0 1200 420" aria-hidden="true">
+        <path id="scorePath" d="M-40 240 C180 90 310 360 515 205 S850 60 1240 250" />
+        <g class="score-notes">
+          <text x="120" y="168">♪</text><text x="355" y="268">●</text><text x="610" y="142">♫</text><text x="885" y="162">●</text><text x="1090" y="244">♪</text>
+        </g>
+      </svg>
+      <div class="hero__content">
+        <p class="eyebrow reveal">Musical institute · Gurugram</p>
+        <h1 class="hero__title" aria-label="Where discipline becomes expression">
+          <span class="line"><span>Where discipline</span></span>
+          <span class="line"><span>becomes <em>expression.</em></span></span>
+        </h1>
+        <div class="hero__foot reveal">
+          <p>Thoughtful musical training for curious beginners, committed learners and every artist still becoming.</p>
+          <a class="circle-link magnetic" href="#experience" aria-label="Explore the institute"><span>Explore</span><b>↓</b></a>
+        </div>
+      </div>
+      <div class="hero__side">OPUS / ˈəʊpəs / A WORK OF MUSIC</div>
+    </section>
+
+    <section class="manifesto section" id="experience">
+      <div class="section-label reveal"><span>01</span> The Overture</div>
+      <div class="manifesto__copy">
+        <p class="kicker reveal">Music is not simply learned.</p>
+        <h2 class="reveal">It is listened to, shaped, and finally made <em>your own.</em></h2>
+      </div>
+      <div class="manifesto__grid">
+        <p class="reveal">At Opus & Ivory, every lesson begins with attention—to the student, to the instrument, and to the small details that turn practice into artistry.</p>
+        <div class="principles reveal">
+          <div><span>01</span><strong>Technique</strong><small>A confident foundation</small></div>
+          <div><span>02</span><strong>Musicality</strong><small>Expression with intent</small></div>
+          <div><span>03</span><strong>Performance</strong><small>Presence beyond notes</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="programmes section" id="programmes">
+      <div class="section-label reveal"><span>02</span> Learning paths</div>
+      <div class="programmes__head reveal">
+        <h2>Find your <em>instrument.</em></h2>
+        <p>Explore focused one-to-one and small-format learning. Ask the institute about current batches and availability.</p>
+      </div>
+      <div class="programme-list">
+        <a href="#visit" class="programme reveal" data-note="C4">
+          <span class="programme__number">I</span><h3>Piano & Keyboard</h3><p>Touch · timing · repertoire</p><b>Explore ↗</b>
+        </a>
+        <a href="#visit" class="programme reveal" data-note="E4">
+          <span class="programme__number">II</span><h3>Guitar</h3><p>Rhythm · chords · musicianship</p><b>Explore ↗</b>
+        </a>
+        <a href="#visit" class="programme reveal" data-note="G4">
+          <span class="programme__number">III</span><h3>Voice</h3><p>Breath · tone · expression</p><b>Explore ↗</b>
+        </a>
+        <a href="#visit" class="programme reveal" data-note="B4">
+          <span class="programme__number">IV</span><h3>Young Musicians</h3><p>Curiosity · ear · confidence</p><b>Explore ↗</b>
+        </a>
+      </div>
+    </section>
+
+    <section class="interlude" aria-label="Our approach">
+      <div class="interlude__image"><img src="assets/piano-lesson.webp" alt="A piano teacher guiding a student at the keys" loading="lazy"></div>
+      <div class="interlude__copy reveal">
+        <span class="quote-mark">“</span>
+        <blockquote>The finest progress is rarely loud. It is built note by note.</blockquote>
+        <p>Patient guidance. Purposeful practice. A space where students feel heard.</p>
+      </div>
+    </section>
+
+    <section class="gallery section" id="gallery">
+      <div class="section-label reveal"><span>03</span> Inside the practice</div>
+      <div class="gallery__title reveal">
+        <h2>A room for <em>becoming.</em></h2>
+        <p>Technique meets curiosity in an atmosphere designed for attention.</p>
+      </div>
+      <div class="gallery__stage">
+        <figure class="gallery__large reveal">
+          <img src="assets/guitar-lesson.webp" alt="A focused guitar lesson in a warm studio" loading="lazy">
+          <figcaption><span>Focused mentorship</span><small>Study / Rehearse / Grow</small></figcaption>
+        </figure>
+        <div class="gallery__detail reveal">
+          <span class="vinyl" aria-hidden="true"><i></i></span>
+          <p>Every learner arrives with a different rhythm. The teaching should meet them there.</p>
+          <a href="#visit">Arrange a visit <span>↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="score-room section" aria-label="Interactive musical experience">
+      <div class="score-room__copy reveal">
+        <span class="section-label"><span>04</span> Play a phrase</span>
+        <h2>Your first note can begin <em>right here.</em></h2>
+        <p>Tap the ivory keys. Each one carries a piece of the Opus & Ivory motif.</p>
+      </div>
+      <div class="piano" role="group" aria-label="Interactive piano">
+        <button class="key" data-frequency="261.63" aria-label="Play C"><span>C</span></button>
+        <button class="key" data-frequency="293.66" aria-label="Play D"><span>D</span><i class="black-key" data-frequency="277.18"></i></button>
+        <button class="key" data-frequency="329.63" aria-label="Play E"><span>E</span><i class="black-key" data-frequency="311.13"></i></button>
+        <button class="key" data-frequency="349.23" aria-label="Play F"><span>F</span></button>
+        <button class="key" data-frequency="392" aria-label="Play G"><span>G</span><i class="black-key" data-frequency="369.99"></i></button>
+        <button class="key" data-frequency="440" aria-label="Play A"><span>A</span><i class="black-key" data-frequency="415.3"></i></button>
+        <button class="key" data-frequency="493.88" aria-label="Play B"><span>B</span><i class="black-key" data-frequency="466.16"></i></button>
+      </div>
+    </section>
+
+    <section class="visit section" id="visit">
+      <div class="visit__map reveal">
+        <iframe title="Opus & Ivory Musical Institute location" src="https://www.google.com/maps?q=Opus%20%26%20Ivory%20Musical%20Institute%2C%2028.4649494%2C77.0256271&z=16&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <a class="map-link" href="https://maps.google.com/maps/place/Opus+%26+Ivory+Musical+Institute/@28.4649494,77.0256271,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x85EFB1BF605078E5!8m2!3d28.4649494!4d77.0256271" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+      </div>
+      <div class="visit__copy reveal">
+        <div class="section-label"><span>05</span> Visit the institute</div>
+        <h2>Come hear the <em>difference.</em></h2>
+        <p>Meet the faculty, see the learning space and discuss the right starting point for your musical journey.</p>
+        <div class="visit__meta"><span>Gurugram, Haryana</span><span>28.4649° N · 77.0256° E</span></div>
+        <a class="button magnetic" href="https://maps.google.com/maps/place/Opus+%26+Ivory+Musical+Institute/@28.4649494,77.0256271,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x85EFB1BF605078E5!8m2!3d28.4649494!4d77.0256271" target="_blank" rel="noopener">Plan your visit <span>↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <img src="assets/opus-ivory-logo.webp" alt="Opus & Ivory Musical Institute" class="footer-logo">
+    <p>Where the next movement begins.</p>
+    <div class="footer-bottom"><span>© <span id="year"></span> Opus & Ivory</span><a href="#home">Back to top ↑</a></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
