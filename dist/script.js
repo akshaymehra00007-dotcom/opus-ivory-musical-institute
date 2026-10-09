@@ -106,8 +106,8 @@ whatsappForm?.addEventListener('submit', event => {
   event.preventDefault();
   const data = new FormData(whatsappForm);
   const name = String(data.get('name') || '').trim();
-  const interest = String(data.get('interest') || 'Harmonium classes');
+  const interest = String(data.get('interest') || 'Music classes');
   const message = String(data.get('message') || '').trim();
-  const text = `Hello Opus & Ivory, my name is ${name}. I am interested in ${interest}.${message ? ` ${message}` : ''}`;
-  window.open(`https://wa.me/916394166692?text=${encodeURIComponent(text)}`, '_blank', 'noopener');
+  const text = `Hello Sur Sangeet Academy, my name is ${name}. I am interested in ${interest}.${message ? ` ${message}` : ''}`;
+  window.open(`https://wa.me/918437786555?text=${encodeURIComponent(text)}`, '_blank', 'noopener');
 });
